@@ -29,7 +29,7 @@ node {
          stage('Run image') {
         /* Finally,Runt the image build. */
              docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-            app.run("-it -p 8000:8000 dockerhubvasudev/firstpipeline-example:${env.BUILD_NUMBER}")
+            app.run("dockerhubvasudev/firstpipeline-example:${env.BUILD_NUMBER}")
         }
                  
            }
