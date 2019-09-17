@@ -36,11 +36,11 @@ node {
     
      stage('Run') {
         /* Finally,Runt the image build. */
-         steps{
+       
              echo "Run docker image"
              script{
                  app.run{}
                    }
-              }
+             
     }
 }
