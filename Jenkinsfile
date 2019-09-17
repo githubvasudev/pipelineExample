@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("firstpipeline-example:${env.BUILD_NUMBER}")
+        app = docker.build("dockerhubvasudev/firstpipeline-example:${env.BUILD_NUMBER}")
     }
 
     stage('Test image') {
