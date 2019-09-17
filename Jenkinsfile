@@ -39,7 +39,7 @@ node {
        
              echo "Run docker image"
              
-                 app.run("dockerhubvasudev/firstpipeline-example:${env.BUILD_NUMBER}")
+                 app.run("-it", "-p", "8000:8000", "dockerhubvasudev/firstpipeline-example:${env.BUILD_NUMBER}")
                    
              
     }
