@@ -38,9 +38,9 @@ node {
         /* Finally,Runt the image build. */
        
              echo "Run docker image"
-             script{
-                 app.run{}
-                   }
+             
+                 app.run{"-it","p","8000:8000","dockerhubvasudev/firstpipeline-example:${env.BUILD_NUMBER}"}
+                   
              
     }
 }
