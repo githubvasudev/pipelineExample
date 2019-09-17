@@ -37,7 +37,7 @@ node {
      stage('Run') {
         /* Finally,Runt the image build. */
              
-                 app.run("8000:8000","dockerhubvasudev/firstpipeline-example:${env.BUILD_NUMBER}")
+                 app.run("-t -p 8000:8000","dockerhubvasudev/firstpipeline-example:${env.BUILD_NUMBER}")
                    
              
     }
