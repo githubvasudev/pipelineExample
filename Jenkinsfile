@@ -26,11 +26,11 @@ node {
             
         }
     }
-         stage('Run image') {
-        /* Finally,Runt the image build. */
+         /* stage('Run image') {
+        Finally,Runt the image build. 
              docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
             app.run()
         }
                  
-           }
+           }*/
 }
